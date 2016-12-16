@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/lstv" >
+
+        <TextView
+            android:id="@+id/firmaAdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Kamil Koç"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/firmaLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/resim" />
+
+
+        <TextView
+            android:id="@+id/kalkis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/firmaAdi"
+            android:layout_centerVertical="true"
+            android:text="Kalkış:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/kalkissaat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/kalkis"
+            android:layout_alignBottom="@+id/kalkis"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/kalkis"
+            android:text="14:30"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+
+
+        <TextView
+            android:id="@+id/fiyat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="31dp"
+            android:text="38TL"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="13sp" android:textStyle="bold"/>
+
+
+
+
+        <TextView
+            android:id="@+id/varis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/kalkis"
+            android:layout_below="@+id/firmaLogo"
+            android:text="Varış"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/varissaat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/varis"
+            android:layout_alignBottom="@+id/varis"
+            android:layout_alignLeft="@+id/kalkissaat"
+            android:text="15:30"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

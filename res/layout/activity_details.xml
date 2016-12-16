@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#FFA500"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Yolculuk Detayları"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="@drawable/details">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="64dp"
+            android:layout_height="59dp"
+            android:src="@drawable/resim"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="48dp" android:layout_alignParentTop="true"
+            android:layout_marginTop="21dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1077dp" android:layout_alignParentTop="true" android:layout_marginTop="87dp">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fiyat:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="50dp"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:layout_alignLeft="@+id/textView2" android:layout_alignParentTop="true"
+                android:layout_marginTop="250dp"/>
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tahmini Yolculuk Süresi:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:layout_alignLeft="@+id/textView2" android:layout_alignParentTop="true"
+                android:layout_marginTop="220dp"/>
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:layout_alignLeft="@+id/textView9" android:layout_alignTop="@+id/textView10"/>
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:layout_alignLeft="@+id/textView7" android:layout_alignTop="@+id/textView8"/>
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalkış Saati:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:layout_alignLeft="@+id/textView2" android:layout_alignParentTop="true"
+                android:layout_marginTop="149dp"/>
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:layout_alignLeft="@+id/textView3" android:layout_alignTop="@+id/textView6"/>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bilet Tarihi:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:layout_alignLeft="@+id/textView2" android:layout_alignParentTop="true"
+                android:layout_marginTop="107dp"/>
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Varış Saati:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:layout_alignLeft="@+id/textView2" android:layout_alignParentTop="true"
+                android:layout_marginTop="183dp"/>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="163dp"
+                android:layout_alignTop="@+id/textView2"/>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Firma Adı:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" android:layout_alignLeft="@+id/textView2"
+                android:layout_alignParentTop="true" android:layout_marginTop="42dp"/>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignLeft="@+id/textView3"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+              <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+              </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFA500"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Hesaplı Yolculuk"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/linearLayout1"
+            android:background="@drawable/background">
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tek"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Tek Yön"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/gitgel"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:text="Gidiş - Dönüş"
+                android:textColor="#000000" />
+        </RadioGroup>
+        <Spinner
+            android:id="@+id/nereden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup1"
+            android:layout_alignRight="@+id/radioGroup1"
+            android:layout_below="@+id/radioGroup1"
+            android:entries="@array/nereden" android:background="@drawable/nrddnn" android:paddingLeft="15dp"/>
+        <Spinner
+            android:id="@+id/nereye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/nereye" android:background="@drawable/nrye"
+            android:layout_alignLeft="@+id/radioGroup1"
+            android:layout_alignParentTop="true" android:layout_marginTop="87dp"
+            android:layout_alignRight="@+id/radioGroup1" android:paddingLeft="15dp"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Gidiş"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic|bold" android:layout_alignLeft="@+id/radioGroup1"
+            android:layout_alignParentTop="true" android:layout_marginTop="136dp"/>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup1" android:layout_below="@+id/textView2"
+            android:layout_alignRight="@+id/radioGroup1">
+
+            <Spinner
+                android:id="@+id/gun"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.81"
+                android:entries="@array/gun" android:background="@drawable/gunay" android:paddingLeft="15dp"/>
+
+            <Spinner
+                android:id="@+id/ay"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/ay" android:background="@drawable/gunay" android:layout_marginLeft="20dp"
+                android:paddingLeft="15dp"/>
+
+            <Spinner
+                android:id="@+id/yil"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/yil" android:background="@drawable/yil" android:layout_marginLeft="16dp"
+                android:paddingLeft="15dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dönüş"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic|bold"
+            android:layout_alignLeft="@+id/radioGroup1" android:layout_alignParentTop="true"
+            android:layout_marginTop="204dp"/>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup1" android:layout_below="@+id/textView3"
+            android:layout_alignRight="@+id/radioGroup1">
+
+            <Spinner
+                android:id="@+id/dgun"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/gun" android:background="@drawable/gunay" android:paddingLeft="15dp"/>
+
+            <Spinner
+                android:id="@+id/day"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/ay" android:background="@drawable/gunay" android:layout_marginLeft="20dp"
+                android:paddingLeft="15dp"/>
+
+            <Spinner
+                android:id="@+id/dyil"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/yil" android:background="@drawable/yil" android:layout_marginLeft="19dp"
+                android:paddingLeft="15dp"/>
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/devamf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/continueb"
+            android:layout_alignRight="@+id/radioGroup1" android:layout_alignParentTop="true"
+            android:layout_marginTop="285dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
